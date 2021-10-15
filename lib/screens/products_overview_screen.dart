@@ -5,6 +5,7 @@ import '../providers/products.dart';
 import '../widgets/badge.dart';
 import '../providers/cart.dart';
 import './cart_screen.dart';
+import '../widgets/app_drawer.dart';
 
 enum filterOptions {
   Favorites,
@@ -54,6 +55,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
           )
         ],
       ),
+      drawer: AppDrawer(),
       body: GridView.builder(
         padding: const EdgeInsets.all(10.0),
         itemCount: products.length,
